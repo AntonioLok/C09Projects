@@ -1,0 +1,99 @@
+#slideshow_content{
+	text-align: center;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
+.gallery_name{
+	font-size: 28px;
+	text-align: center;
+	margin-bottom : 15px;
+}
+
+.img{
+	height: 500px;
+	width: 600px;
+	margin: auto;
+}
+
+.imgtitle {
+  color: black;
+  font-size: 60px;
+  bottom: 590px;
+  position: relative;
+  text-align: center;
+}
+
+.imgauthor {	
+  color: black;
+  font-size: 38px;
+  bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.imgauthor::before {
+  content: "Uploaded by: ";
+}
+
+#messages{
+    display:flex;
+    flex-direction: column; 
+	margin-t: 10%;
+}
+
+.message{
+    display: flex;
+    margin-top:5px;
+    height: 50px;
+    align-items: center;
+	background-color: white;
+	width: 84%;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.message_title{
+	padding-top: 80px;
+}
+
+.date {
+	padding-right:15px;
+	padding-left:5px;
+}
+.author{
+    align-items: center;
+    font-weight: bold;
+}
+
+.author::after {
+    content: " said: "
+}
+
+.content{
+    padding-left:20px;
+}
+
+.icon{
+    width:50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:75%;
+
+}
+
+.delete-icon{
+    background-image: url('../media/delete-icon.png');
+}
+
+.upvote-icon{
+    margin-left: auto;
+    background-image: url('../media/upvote-icon.png');
+}
+
+.downvote-icon{
+    background-image: url('../media/downvote-icon.png');
+}

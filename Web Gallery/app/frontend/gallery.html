@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="style/index.css" rel="stylesheet" type="text/css"/>
+    <link href="style/form.css" rel="stylesheet" type="text/css"/>
+	
+</head>
+<body>
+    <header>
+        <a href="/" id="title">Web Gallery</a>
+		<a href="/signout/" class="btn header_btn" id="signout_button">Sign Out</a>
+    </header>
+	
+	<label class="switch" style="display: none;">
+		<input type="checkbox" id="hide_show">
+		<div class="slider round"> <br> <br> <br> Show / Hide </div>
+	</label>
+	
+	<form class="uploader_form" id="uploader_form" style="display: none;">
+
+		<b1> Uploader Form </b1>
+
+			<span>
+                <div class="formField">
+                Image title: 
+                </div>
+                <div class="inputField">
+                    <input type="text" id="title_image" />
+                </div>
+            </span>
+			
+			<div class="form_radio">
+				  <input type="radio" name="radio_file_option" id="url_option" value="url" />
+				  <label class="form_element" for="url">URL</label>
+				  
+			</div>
+			
+			<span>
+				<div class = "image_url">
+					<div class="formField">
+					Image URL: 
+					</div>
+					<div class="inputField">
+						<input type="text" id="url" />
+					</div>
+				</div>
+            </span>
+			
+			<input type="file" id="image_file" class="form_element">	
+			<input type="submit" class="btn"/>
+    </form>
+	
+	
+	<div class="slideshow-container">
+		<input type="button" class="delete_btn" id="delete_btn" style="display: none;"/> 
+		<div id="slideshow_content">
+			<div class="img">
+			</div>
+		</div>
+		
+		<a class="prev" id="prev" >&#10094;</a>
+        <a class="next" id="next" >&#10095;</a>
+		 
+    </div>
+	 
+	<div class="message_title">
+		<b2> Top 10 comments </b2>
+	</div>
+	
+	<div id="messages">
+	</div>
+	
+	<div class="form_title">
+		<b3> Leave a comment </b3>
+	</div>
+	
+	 <form class="comment_form" id="comment_form">
+		
+		<div class="formField">
+             Comments:
+        </div>
+		<textarea name='comment' id='comment'></textarea><br />
+		<input type="submit" class="btn" />
+    </form>
+  
+	<script src="js/model.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
+		
